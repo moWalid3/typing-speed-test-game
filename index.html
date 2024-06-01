@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing speed test game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="game">
+      <div class="name">Typing Speed Test Game</div>
+      <div class="container">
+        <div class="select-box">
+          <h2><i class="fa-solid fa-angles-right"></i>Choose The Level:</h2>
+          <select class="levels-selector">
+            <option>Easy</option>
+            <option>Normal</option>
+            <option>Hard</option>
+          </select>
+        </div>
+        <div class="message">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          You are playing on
+          <span class="lvl"></span> level & you have
+          <span class="seconds"></span> seconds to type the word
+        </div>
+        <button class="start">Start playing</button>
+        <div class="the-word"></div>
+        <input type="text" class="input" />
+        <div class="upcoming-words">Words will show here</div>
+        <div class="control">
+          <div class="time">Time left: <span></span> seconds</div>
+          <div class="score">
+            Score: <span class="got"></span> from <span class="total"></span>
+          </div>
+        </div>
+        <div class="finish ">
+          <div class="box">
+            <span></span>
+            <h2>GAME OVER !!</h2>
+            <div>
+              <button class="check-btn">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
